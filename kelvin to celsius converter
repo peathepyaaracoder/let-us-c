@@ -1,11 +1,13 @@
-//convert any given temperature(in kelvin) to degree celcius//
+#include <stdio.h>
 
-#include<stdio.h>
 int main() {
-    float temperature;                                          //temperature in kelvin//
-    printf("enter temperature");
+    float temperature;                                          // temperature in Kelvin
+    printf("Enter temperature in Kelvin: ");
     scanf("%f", &temperature);
 
-    printf("temperature in degree celcius is %f", temperature - 273.15);
+    // Conversion formula: Celsius = Kelvin - 273.15
+    float celsius = temperature - 273.15;
+
+    printf("Temperature in degree Celsius is %f\n", celsius);
     return 0;
-}  
+}
