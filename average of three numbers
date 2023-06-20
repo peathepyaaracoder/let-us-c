@@ -1,0 +1,22 @@
+//a program to print average of any three given numbers
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+    float x;
+    printf("enter first number: ");
+    scanf("%f", &x);
+
+    float y;
+    printf("enter second number: ");
+    scanf("%f", &y);
+
+    float z;
+    printf("enter third number: ");
+    scanf("%f", &z);
+
+    float average = (x+y+z)/3;
+
+    printf("the average of the given three numbers is %f", average);
+    return 0;
+}
