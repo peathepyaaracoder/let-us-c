@@ -1,0 +1,24 @@
+//a program to check number of digits in a given number
+
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int x;
+    printf("enter a number: ");
+    scanf("%d", &x);
+
+    if(x>9 && x<100){
+        printf("given number is a double digit number!");
+    }
+    else if(x>=0 && x<10){
+        printf("given number is a single digit number!");
+    }
+    else if(x>=100 && x<=999){
+        printf("given number is a triple digit number!");
+    }
+    else{
+        printf("given number is a multiple digit number!");
+    }
+    return 0;
+}
