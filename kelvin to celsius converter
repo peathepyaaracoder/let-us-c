@@ -1,13 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    float temperature;                                          // temperature in Kelvin
-    printf("Enter temperature in Kelvin: ");
+    float temperature;                                 
+    printf("enter temperature in kelvin: ");
     scanf("%f", &temperature);
 
-    // Conversion formula: Celsius = Kelvin - 273.15
-    float celsius = temperature - 273.15;
+    float celsius = temperature - 273.15;                      // conversion formula: celsius = kelvin - 273.15
 
-    printf("Temperature in degree Celsius is %f\n", celsius);
+    printf("temperature in degree celsius is %f \n", celsius);
     return 0;
 }
