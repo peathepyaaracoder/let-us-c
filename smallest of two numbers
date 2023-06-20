@@ -1,0 +1,25 @@
+//a program to print the smallest of the given two numbers
+
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+    float x;
+    printf("enter first number: ");
+    scanf("%f", &x);
+
+    float y;
+    printf("enter second number: ");
+    scanf("%f", &y);
+
+    if(x>y){
+        printf("%f is the smallest number", y);
+    }
+    else if(y>x){
+        printf("%f is the smallest number", x);
+    }
+    else{
+        printf("both numbers are equal");
+    }
+    return 0;
+}
