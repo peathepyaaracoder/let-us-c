@@ -1,4 +1,4 @@
-//a program to calculate simple interest for any given principle amount//
+//a program to calculate simple interest for any given principle amount
 
 #include<stdio.h>
 
