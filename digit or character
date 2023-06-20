@@ -10,7 +10,7 @@ int main (){
         printf("given character is a digit");
     }
     else{
-        printf("given character is a character");
+        printf("given character is a character lol");
     }
     return 0;
 }
