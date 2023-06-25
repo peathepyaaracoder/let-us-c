@@ -1,0 +1,16 @@
+//in this part ive applied ternary operator
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+    float x;
+    printf("enter first number: ");
+    scanf("%f", &x);
+
+    float y;
+    printf("enter second number: ");
+    scanf("%f", &y);
+
+    x>y? printf("%f is the smallest number", y): printf("%f is the smallest number", x);
+    return 0;
+}
