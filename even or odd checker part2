@@ -1,4 +1,4 @@
-//in this part ive done it using ternary operator
+//in this part ive applied ternary operator
 
 #include<stdio.h>
 #include<math.h>
