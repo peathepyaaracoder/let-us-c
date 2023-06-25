@@ -8,6 +8,6 @@ int main(){
     scanf("%d", &x);
     
     int remainder = x%2;
-    remainder==0?printf("given number is even"): printf("given number is odd");
+    remainder==0? printf("given number is even"): printf("given number is odd");
     return 0;
 }
