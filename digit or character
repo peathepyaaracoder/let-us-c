@@ -6,7 +6,7 @@ int main (){
     printf("enter a character: ");
     scanf("%c", &ch);
 
-    if(ch>=0 && ch<=9){
+    if(ch>='0' && ch<='9'){
         printf("given character is a digit");
     }
     else{
