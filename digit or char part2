@@ -1,0 +1,12 @@
+//in this part ive applied ternary operator
+
+#include <stdio.h>
+#include<math.h>
+int main (){
+    char ch;
+    printf("enter a character: ");
+    scanf("%c", &ch);
+
+    ch>='0' && ch<='9'? printf("given character is a digit"): printf("given character is a character");
+    return 0;
+}
