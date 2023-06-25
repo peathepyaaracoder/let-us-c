@@ -1,0 +1,14 @@
+//also can be used to check whether the compiler, while converting float to integer, rounds off the given value or simply removes the decimal
+
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+   float a;
+   printf("enter any float of your choice: ");
+   scanf("%f", &a);
+   int b;
+   b = (int) a;
+   printf("%d", b);
+   return 0;
+}
