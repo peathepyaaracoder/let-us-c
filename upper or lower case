@@ -1,0 +1,21 @@
+// a program to check whether the character entered by the user is in lower case or upper case
+
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    char ch;
+    printf("enter a character: ");
+    scanf("%c", &ch);
+
+    if(ch>= 'A' && ch<='Z'){
+        printf("given character is in upper case");
+    }
+    else if(ch>='a' && ch<='z'){
+        printf("given character is in lower case");
+    }
+    else{
+        printf("given character is not an english language character");
+    }
+    return 0;
+}
