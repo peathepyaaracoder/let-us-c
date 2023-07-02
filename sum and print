@@ -1,0 +1,19 @@
+// a program to print the sum of first n numbers and to print the n numbers(in one loop)
+
+#include<stdio.h>
+
+int main(){
+    int i, n, sum;
+    sum=0;
+    printf("enter number: ");
+    scanf("%d", &n);
+
+    for(i=1; i<=n; i++){
+        sum+=i;
+        printf("%d\n", i);
+    }
+
+    printf("sum is %d", sum);
+
+    return 0;
+}
