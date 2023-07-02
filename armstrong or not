@@ -1,0 +1,22 @@
+// a program to find whether a number is an armstrong number or not (only for three digit numbers)
+
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int n, sum, r, n1;
+    sum=0;
+    printf("enter number: ");
+    scanf("%d", &n);
+    n1=n;
+
+    while(n>0){
+        r=n%10;
+        sum=sum+(r*r*r);
+        n=n/10;
+    }
+
+    n1==sum? printf("given number is an armstrong number"): printf("given number is not an armstrong number");
+    
+    return 0;
+}
