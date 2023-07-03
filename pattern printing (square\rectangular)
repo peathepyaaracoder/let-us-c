@@ -1,0 +1,22 @@
+// a program to print a pattern of characters according to the user
+
+#include<stdio.h>
+
+int main(){
+    int n,i,j,k;
+    char ch;
+    printf("enter the character: ");
+    scanf("%c", &ch);
+    printf("enter the number of columns: ");
+    scanf("%d", &n);
+    printf("enter the number of rows: ");
+    scanf("%d", &i);
+
+   for(k=1; k<=i; k++){
+     for(j=1; j<=n; j++){
+         printf("%c ", ch);
+     }
+     printf("\n"); 
+    }
+    return 0;
+}
