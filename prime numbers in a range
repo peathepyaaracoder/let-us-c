@@ -1,0 +1,32 @@
+// a program to print all the prime number in a range
+
+#include<stdio.h>
+
+int prime(int k);
+
+int main(){
+    int n, i, j;
+    printf("enter the first number of the range: ");
+    scanf("%d", &n);
+    printf("enter the last number of the range: ");
+    scanf("%d", &i);
+    printf("the prime numbers between %d and %d are ", n, i);
+
+    for(j=n; j<=i; j++){
+        if(prime(j)){
+            printf("%d ", j);
+        }
+    }
+
+    return 0;
+}
+
+int prime (int k){
+    for(int i=2; i<=k-1; i++){
+        if(k%i==0){
+            return 0;
+        }
+    }
+
+    return 1;
+}
