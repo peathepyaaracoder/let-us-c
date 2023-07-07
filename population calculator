@@ -1,0 +1,33 @@
+// a program to calculate the years it takes for a population to reach a particular size with the condition for a population of n, each year, r are born, and z pass away
+
+#include<stdio.h>
+
+int main(){
+    int n, i, y, r, z;
+    y=0;
+    
+    do{
+        printf("enter the starting population: ");
+        scanf("%d", &n);
+    } while(n<9);
+
+   do{
+       printf("enter the ending population:");
+       scanf("%d", &i);
+    } while(i<n);
+
+    printf("the number of population that are born every year: ");
+    scanf("%d", &r);
+
+    printf("the number of population that die every year: ");
+    scanf("%d", &z);
+
+   while(n<i){
+    n= (n + r - z);
+    y++;
+   }
+
+   printf("years= %d\n", y);
+
+    return 0;
+}
