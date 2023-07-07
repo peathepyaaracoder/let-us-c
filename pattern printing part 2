@@ -1,0 +1,33 @@
+//a program to print a pattern (right aligned triangle) of a character according to the user
+
+#include <stdio.h>
+
+int main(void)
+{
+    int h, n, i, j, k, ch;
+    n = 1;
+
+    printf("enter a character: ");
+    scanf("%c", &ch);
+
+   do
+   {
+    printf("enter height: ");
+    scanf("%d", &h);
+   }
+   while(h < 1 || h > 8);
+
+   for(i = h; i >= 1; i--)
+   {
+    for(j = 1; j <= i - 1; j++)
+    {
+        printf(" ");
+    }
+    for(k = 1; k <= n; k++)
+    {
+        printf("%c", ch);
+    }
+    printf("\n");
+    n++;
+   }
+}
