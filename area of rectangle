@@ -1,0 +1,22 @@
+// a program to print the area of a rectangle with side a and b
+
+#include<stdio.h>
+
+float area(float a, float b);
+
+int main (){
+    float a, b;
+    printf("enter one side: ");
+    scanf("%f", &a);
+
+    printf("enter second side: ");
+    scanf("%f", &b);
+
+    printf("the area of the reactangle with side %f and %f is %f", a, b, area(a, b));
+
+    return 0;
+}
+
+float area(float a, float b){
+    return a*b;
+}
