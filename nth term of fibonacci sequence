@@ -1,0 +1,28 @@
+// a program to print the nth term of the fibonacci sequence
+
+#include<stdio.h>
+
+int fib(int n);
+
+int main(void){
+    int n;
+    printf("enter a number: ");
+    scanf("%d", &n);
+
+    printf("the %d th term of fibonacci sequance is %d", n, fib(n));
+}
+
+int fib(int n){
+    if(n==0){
+        return 0;
+    }
+    if(n==1){
+        return 1;
+    }
+
+    int fibNm1= fib(n-1);
+    int fibNm2= fib(n-2);
+    int fibN= fibNm1 + fibNm2;
+    
+    return fibN;
+}
