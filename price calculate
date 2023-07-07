@@ -1,0 +1,20 @@
+// a program to claculate the final price of an item after applying the necessary taxes
+
+#include<stdio.h>
+
+void calculateprice(float price);
+
+int main(){
+    float price;
+    printf("enter price of the item: ");
+    scanf("%f", &price);
+
+    calculateprice(price);
+
+    return 0;
+}
+
+void calculateprice(float price){
+    price += (0.18*price);
+    printf("fina price of the item is %f", price);
+}
