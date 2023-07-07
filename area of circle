@@ -1,0 +1,19 @@
+// a program to print the area of a circle with given radius
+
+#include<stdio.h>
+
+float area(float radius);
+
+int main(){
+    float radius;
+    printf("enter the radius: ");
+    scanf("%f", &radius);
+
+    printf("the area of the circle with radius %f if %f", radius, area(radius));
+
+    return 0;
+}
+
+float area(float radius){
+    return 3.14*radius*radius;
+}
