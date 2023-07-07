@@ -1,0 +1,22 @@
+// a program to print the factorial of a number using recursion
+
+#include<stdio.h>
+
+int factorial (int n);
+
+int main (void){
+    int n;
+    printf("enter a number: ");
+    scanf("%d", &n);
+
+    printf("factorial of %d is %d", n, factorial(n));
+}
+
+int factorial(int n){
+    if(n==0){
+        return 1;
+    }
+    int factNm1= factorial(n-1);
+    int factN= factNm1*n;
+    return factN;
+}
