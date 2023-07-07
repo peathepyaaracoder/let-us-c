@@ -1,0 +1,22 @@
+// a program to print the table of a number using functions 
+
+#include<stdio.h>
+
+void print_table(int n);
+
+int main(){
+    int n;
+    printf("enter a number: ");
+    scanf("%d", &n);
+
+    print_table(n);
+    
+    return 0;
+}
+
+int i;
+void print_table(int n){
+    for(i=0; i<=10; i++){
+        printf("%d x %d = %d\n", n, i, i*n);
+    }
+}
