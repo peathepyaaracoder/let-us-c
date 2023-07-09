@@ -1,0 +1,23 @@
+// a program to find the square root of a number
+/*im aware that there's already a function in the math.h header file for finding the square root of a number however the question required us 
+to to not use the sqrt funtion hence i used the pow function*/
+
+#include<stdio.h>
+#include<math.h>
+
+float sqroot(float n);
+
+int main(void){
+    float n;
+
+    printf("enter a number: ");
+    scanf("%f", &n);
+
+    printf("square root of %f is %f", n, sqroot(n));
+} 
+
+float sqroot(float n){
+    float root;
+    root= pow(n, 0.5);
+    return root;
+}
