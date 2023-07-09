@@ -1,0 +1,28 @@
+// a program to print hot or cold depending upon the temperature entered by the user
+
+#include<stdio.h>
+
+void hot();
+void cold();
+
+int main(void){
+    int n;
+    printf("enter the temperature (in celsius): ");
+    scanf("%d", &n);
+
+    if(n< 20){
+       cold();
+    }
+
+    if(n>= 20){
+        hot();
+    }
+}
+
+void cold(){
+    printf("it is cold");
+}
+
+void hot(){
+    printf("it is hot");
+}
