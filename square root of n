@@ -5,19 +5,23 @@ to to not use the sqrt funtion hence i used the pow function*/
 #include<stdio.h>
 #include<math.h>
 
-float sqroot(float n);
+int sqroot(int n);
 
 int main(void){
-    float n;
+    int n;
 
     printf("enter a number: ");
-    scanf("%f", &n);
+    scanf("%d", &n);
 
-    printf("square root of %f is %f", n, sqroot(n));
+    printf("square root of %d is %d", n, sqroot(n));
 } 
 
-float sqroot(float n){
-    float root;
-    root= pow(n, 0.5);
-    return root;
+int sqroot(int n){
+    int i;
+    for(i=1; i<= n/2; i++){
+        if(i == n/i){
+            break;
+        }
+    }   
+    return i;
 }
