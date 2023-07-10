@@ -1,6 +1,6 @@
 // a program to find the square root of a number
 /*im aware that there's already a function in the math.h header file for finding the square root of a number however the question required us 
-to to not use the sqrt funtion hence i used the pow function*/
+to not use the sqrt funtion*/
 
 #include<stdio.h>
 #include<math.h>
