@@ -1,0 +1,25 @@
+// a program to find the maximun number b/w two numbers using pointers
+
+#include<stdio.h>
+ 
+ int main (void){
+    int num1, num2;
+    int *ptr1 = &num1;
+    int *ptr2 = &num2;
+
+    printf("enter first number: ");
+    scanf("%d", &num1);
+
+    printf("enter second number: ");
+    scanf("%d", &num2);
+
+    if(*ptr1 > *ptr2){
+        printf("%d is the bigger number", *ptr1);
+    }
+    else if(*ptr2 > *ptr1){
+        printf("%d is the bigger number", *ptr2);
+    }
+    else{
+        printf("both numbers are equal");
+    }
+ }   
