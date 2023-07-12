@@ -1,0 +1,13 @@
+// a program to print all letters in english alphabet using pointers
+
+#include<stdio.h>
+
+int main (void){
+    char first_let = 65;
+    char *ptr;
+   
+    for (int i = 0; i <= 25; i++){
+        *ptr = i + first_let;
+        printf("%c ", *ptr);
+    }
+}
