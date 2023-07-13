@@ -1,0 +1,35 @@
+//a program to reverse an array using function
+
+/*pseudocode:
+for(i = 0; i < n/2; i++)
+first val = arr[i]
+second val = arr[n-i-1]
+arr[i] = second value
+arr[n-i-1] = first val*/
+
+#include<stdio.h>
+
+void printarr(int arr[], int n);
+void reverse(int arr[], int n);
+
+int main (void){
+    int arr[] = {1, 2, 3, 4, 5};
+    reverse(arr, 5);
+    printarr(arr, 5);
+}
+
+void printarr(int arr[], int n){
+    for (int i = 0; i < n; i++){
+        printf("%d\t", arr[i]);
+    }
+    printf("\n");
+}
+
+void reverse (int arr[], int n){
+    for (int i = 0; i < n/2; i++){
+        int firstval = arr[i];
+        int secondval = arr[n-i-1];
+        arr[i] = secondval;
+        arr[n-i-1] = firstval;
+    }
+}
