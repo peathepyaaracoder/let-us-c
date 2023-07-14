@@ -1,0 +1,39 @@
+//  a program to count the number of odd number in an array
+
+#include<stdio.h>
+
+int countodd (int oddarr[], int n);
+
+int main(void){
+    int n;
+
+    printf("Enter the size of the array: ");
+    scanf("%d", &n);
+
+    int oddarr[n];
+
+    printf("Enter the elements of the array:\n");
+    for (int i = 0; i < n; i++) {
+        printf("Enter element %d: ", i + 1);
+        scanf("%d", &oddarr[i]);
+    }
+
+    printf("Array elements:");
+    for (int i = 0; i < n; i++) {
+        printf(" %d", oddarr[i]);
+    }
+
+    printf("\n");
+
+    printf("there are %d odd numbers in the array", countodd(oddarr, 6));
+}
+
+int countodd (int oddarr[], int n ){
+    int count = 0;
+    for (int i = 0; i < n; i++){
+        if (oddarr[i] %2 != 0){
+            count++;
+        }
+    }
+    return count;
+}
