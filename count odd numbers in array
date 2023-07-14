@@ -25,7 +25,7 @@ int main(void){
 
     printf("\n");
 
-    printf("there are %d odd numbers in the array", countodd(oddarr, 6));
+    printf("there are %d odd numbers in the array", countodd(oddarr, n));
 }
 
 int countodd (int oddarr[], int n ){
