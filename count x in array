@@ -1,0 +1,44 @@
+//a program to count the number of times a number x occurs in an array
+
+#include<stdio.h>
+
+int countx(int arr[], int n, int x);
+
+int main(void){
+    int x, n;
+
+    printf("Enter the size of the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Enter the elements of the array:\n");
+
+    for (int i = 0; i < n; i++) {
+        printf("Enter element %d: ", i + 1);
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Array elements:");
+
+    for (int i = 0; i < n; i++) {
+        printf(" %d", arr[i]);
+    }
+
+    printf("\n");
+
+    printf("enter the number you want to check: ");
+    scanf("%d", &x);
+
+    printf("the number of times %d occurs in the array is %d", x, countx(arr, n, x));
+}
+
+int countx(int arr[], int n, int x){
+    int count = 0;
+    for (int i = 0; i < n; i++){
+        if (arr[i] == x){
+            count++;
+        }
+    }
+    return count;
+}
